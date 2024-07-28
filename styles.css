@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'TBCX';
+    src: url('assets/fonts/TBCXBold.6db5e61d.woff2') format('woff2'),
+         url('assets/fonts/TBCXMedium.8ef1248a.woff2') format('woff'),
+         url('assets/fonts/TBCXRegular.dee156cc.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TBCX', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: #fff; /* Adjust based on your design */
+     /* Optional: Add padding if needed */
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(34, 34, 34, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-brand {
+    font-weight: 400;
+    display: flex;
+    margin-right: 50px;
+    color: #555f62;
+    font-size: 32px;
+}
+
+.vertical-line {
+    border-left: 1px solid #555f62;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'TBCX', sans-serif;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.1);
+}
+
+.navbar-nav .dropdown-toggle::after {
+    display: none;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+    color: #555f62;
+}
+
+.header_search-button svg {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.arrow-link {
+    display: flex;
+    align-items: center;
+    color: #182cc0;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.arrow-link:hover .button_text {
+    color: #007bff;
+}
+
+.button_icon {
+    margin-right: 0.5rem;
+}
+
+.lang_dropdown {
+    position: relative;
+}
+
+.lang_toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang_toggle .icon svg {
+    margin-right: 0.5rem;
+}
+
+.lang_list-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.lang_list {
+    padding: 0.5rem 1rem;
+}
+
+.lang_list-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.lang_list-item:hover {
+    background: #f1f1f1;
+}
+
+.lang_dropdown:hover .lang_list-wrapper {
+    display: block;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.breadcrumbs {
+    box-sizing: border-box;
+    color: rgb(85, 95, 98);
+    display: block;
+    font-family: TBCX, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 68.3906px;
+    line-height: 23.8px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-size-adjust: 100%;
+    width: 100%;
+}
+
+/* New styles for mobile menu */
+.navbar-toggler {
+    order: 2;
+    margin-left: auto;
+}
+
+.header_buttons {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_buttons.hidden {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .header_buttons {
+        display: flex !important;
+    }
+}
+
+.navbar-toggler {
+    order: 2;
+    margin-left: auto;
+  }
+  .header_buttons {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header_buttons.hidden {
+    display: none;
+  }
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+    .header_buttons {
+      display: flex !important;
+    }
+  }
+
+  @media(max-width: 992px) {
+    .lang_toggle div {
+    display: none;
+}
+    }
+@media (max-width: 750px) {
+    .navbar-brand p {
+        display: none;
+    }
+    .vertical-line {
+        display: none;
+    }
+    
+}
+/* Background section styling */
+.background-section {
+    position: relative;
+    background-image: url('assets/img/ze324k50.yq4Become-2.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust height as needed */
+    color: #fff; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for better text readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: absolute;
+    left: 0;
+    margin-left: 2rem; /* Margin from the left side */
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Default positioning: center-left */
+@media (min-width: 950px) {
+    .content {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* Positioning: bottom-left */
+@media (max-width: 949px) and (min-width: 760px) {
+    .content {
+        bottom: 1rem; /* Margin from the bottom */
+        top: auto;
+        transform: none;
+    }
+}
+
+/* Positioning: bottom-center */
+@media (max-width: 760px) {
+    .content {
+        bottom: 1rem; /* Margin from the bottom */
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-image: linear-gradient(15deg, rgb(0, 22, 130), rgb(50, 64, 229));
+
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color:rgb(50, 149, 206) ;
+}
+
+/* Responsive adjustments */
+@media (max-width: 760px) {
+
+    .content {
+        bottom: 10px; /* Margin from the bottom */
+        top: auto;
+        left: 30%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    p {
+        font-size: 0.875rem;
+        text-align: left;
+    }
+
+    .subscribe-button {
+        
+        font-size: 0.875rem;
+        width: 100%;
+    }
+}
+.section_big-message {
+    background-color: #f8f9fa; /* Background color for contrast */
+    padding: 50px 0; /* Vertical padding */
+    text-align: center; /* Center align text */
+}
+
+
+
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+}
+
+.big-message_text {
+    font-size: 32px; /* Base font size */
+    font-weight: 500; /* Font weight for readability */
+    line-height: 1.5; /* Line height for readability */
+    color: rgb(20,23,2); /* Text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .big-message_text {
+        font-size: 28px; /* Font size for tablets */
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 480px) {
+    .big-message_text {
+        font-size: 1.25rem; /* Font size for mobile phones */
+    }
+}
+
+
+
+/*eeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeee*/
+
+.section_become-concept {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+
+.section_become-concept .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Heading styling */
+.heading-wrapper {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.heading-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Grid container styling */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 1rem; /* Space between items */
+}
+
+/* Grid card styling */
+.grid-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Grid card hover effect */
+.grid-card:hover {
+    transform: scale(1.05);
+}
+
+/* Default styling for grid cards */
+.grid-card:nth-child(1) {
+    grid-column: 1; /* First column */
+    grid-row: 1; /* First row */
+    background-image: url('/assets/img/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png');
+    background-size: cover; /* Cover to ensure the image fills the container */
+    background-position: center;
+    height: 256px; /* Fixed height */
+}
+
+.grid-card:nth-child(2) {
+    grid-column: 2; /* Second column */
+    grid-row: 1 / span 2; /* Spans both rows */
+    background-image: url('/assets/img/nqeaa1rb.avl360.png');
+    background-size: cover; /* Cover to ensure the image fills the container */
+    background-position: center;
+    height: 542px; /* Larger height */
+}
+
+.grid-card:nth-child(3) {
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+    background-image: url('/assets/img/0m25n3qt.w03prem.png');
+    background-size: cover; /* Cover to ensure the image fills the container */
+    background-position: center;
+    height: 256px; /* Fixed height */
+}
+
+/* Content within grid cards */
+.grid-card_content {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.grid-card_content a.button_text{
+    color: #fff;
+    text-decoration: none;}
+
+
+.grid-card_content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.arrow-link.is-white {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-link.is-white .button_icon {
+    margin-right: 0.5rem;
+}
+
+.arrow-link.is-white:hover .button_text {
+    color: rgb(170, 172, 175);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+    .grid-2-col {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: repeat(3, auto); /* Three rows for mobile */
+    }
+
+    .grid-card {
+        background-size: cover; /* Cover for all images */
+        background-position: center;
+        height: 256px; /* Equal height for all images */
+    }
+}
+
+@media (max-width: 778px) {
+    .grid-2-col {
+        display: flex;
+        flex-direction: row; /* Horizontal slider */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 0; /* No gap in slider mode */
+    }
+
+    .grid-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 0; /* Use padding to maintain aspect ratio */
+        padding-top: 100%; /* 1:1 Aspect ratio */
+        background-size: cover; /* Cover for the slider */
+        background-position: center;
+    }
+
+    .grid-card:nth-child(2) {
+        /* No specific height for the second card; it follows the square aspect ratio */
+    }
+
+    .grid-card:nth-child(1),
+    .grid-card:nth-child(2),
+    .grid-card:nth-child(3) {
+        margin-right: 1rem;
+        scroll-snap-align: start; /* Snap to each item */
+    }
+}
