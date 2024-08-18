@@ -431,8 +431,11 @@ eeeeeeeeeeeeeeeeee*/
 }
 
 /* Grid card hover effect */
-.grid-card:hover {
+.grid-card:hover ,
+.swiper-slide:hover{
     transform: scale(1.05);
+    transition: transform 0.3s ease;
+
 }
 
 /* Default styling for grid cards */
