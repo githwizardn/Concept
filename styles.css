@@ -229,7 +229,7 @@ header p {
 /* Background section styling */
 .background-section {
     position: relative;
-    background-image: url('../assets/img/ze324k50.yq4Become-2.webp'); /* Replace with your image path */
+    background-image: url('./assets/img/ze324k50.yq4Become-2.webp'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 50vh; /* Adjust height as needed */
@@ -240,7 +240,7 @@ header p {
 }
 .background-sectionbanker {
     position: relative;
-    background-image: url('../assets/img/nvmgsymp.3xqprivate\ banker.png'); /* Replace with your image path */
+    background-image: url('./assets/img/nvmgsymp.3xqprivate\ banker.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 50vh; /* Adjust height as needed */
