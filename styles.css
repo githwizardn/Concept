@@ -439,7 +439,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(1) {
     grid-column: 1; /* First column */
     grid-row: 1; /* First row */
-    background-image: url('/assets/img/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png');
+    background-image: url('./assets/img/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 256px; /* Fixed height */
@@ -448,7 +448,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(2) {
     grid-column: 2; /* Second column */
     grid-row: 1 / span 2; /* Spans both rows */
-    background-image: url('/assets/img/nqeaa1rb.avl360.png');
+    background-image: url('./assets/img/nqeaa1rb.avl360.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 542px; /* Larger height */
@@ -457,7 +457,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(3) {
     grid-column: 1; /* First column */
     grid-row: 2; /* Second row */
-    background-image: url('/assets/img/0m25n3qt.w03prem.png');
+    background-image: url('./assets/img/0m25n3qt.w03prem.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 256px; /* Fixed height */
