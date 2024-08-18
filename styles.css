@@ -18,7 +18,6 @@ body {
     top: 0;
     z-index: 1000; /* Ensures it stays above other content */
     background-color: #fff; /* Adjust based on your design */
-     /* Optional: Add padding if needed */
 }
 
 header {
@@ -27,6 +26,12 @@ header {
     box-shadow: 0 0 0 1px rgba(34, 34, 34, 0.1);
     position: relative;
     z-index: 1000;
+}
+header p { 
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
 }
 
 .navbar {
@@ -48,7 +53,7 @@ header {
 }
 
 .vertical-line {
-    border-left: 1px solid #555f62;
+    border-left: 1.5px solid #555f62;
     height: 40px;
     margin: 0 10px;
 }
@@ -224,7 +229,18 @@ header {
 /* Background section styling */
 .background-section {
     position: relative;
-    background-image: url('assets/img/ze324k50.yq4Become-2.webp'); /* Replace with your image path */
+    background-image: url('../assets/img/ze324k50.yq4Become-2.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust height as needed */
+    color: #fff; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-sectionbanker {
+    position: relative;
+    background-image: url('../assets/img/nvmgsymp.3xqprivate\ banker.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 50vh; /* Adjust height as needed */
@@ -423,7 +439,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(1) {
     grid-column: 1; /* First column */
     grid-row: 1; /* First row */
-    background-image: url('./assets/img/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png');
+    background-image: url('/assets/img/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 256px; /* Fixed height */
@@ -432,7 +448,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(2) {
     grid-column: 2; /* Second column */
     grid-row: 1 / span 2; /* Spans both rows */
-    background-image: url('./assets/img/nqeaa1rb.avl360.png');
+    background-image: url('/assets/img/nqeaa1rb.avl360.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 542px; /* Larger height */
@@ -441,7 +457,7 @@ eeeeeeeeeeeeeeeeee*/
 .grid-card:nth-child(3) {
     grid-column: 1; /* First column */
     grid-row: 2; /* Second row */
-    background-image: url('./assets/img/0m25n3qt.w03prem.png');
+    background-image: url('/assets/img/0m25n3qt.w03prem.png');
     background-size: cover; /* Cover to ensure the image fills the container */
     background-position: center;
     height: 256px; /* Fixed height */
@@ -515,9 +531,7 @@ eeeeeeeeeeeeeeeeee*/
         background-position: center;
     }
 
-    .grid-card:nth-child(2) {
-        /* No specific height for the second card; it follows the square aspect ratio */
-    }
+   
 
     .grid-card:nth-child(1),
     .grid-card:nth-child(2),
@@ -526,3 +540,456 @@ eeeeeeeeeeeeeeeeee*/
         scroll-snap-align: start; /* Snap to each item */
     }
 }
+
+/* General Styles */
+.section_numbers {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Numbers Section */
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .numbers_item {
+    flex: 1;
+    text-align: center;
+    background-color:white;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 44px;
+    font-style: bold;
+  }
+  
+  .numbers_number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .numbers_item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .numbers {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .numbers_item {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+/* General Stylesssssssssssssssss */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section_offers-swiper {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    position: relative; /* Ensure the scrollbar is positioned correctly */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Heading Styles */
+.heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.heading-wrapper h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.arrow-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.arrow-link .button_icon svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.arrow-link .button_text {
+    margin-left: 0.5rem;
+    color: #007BFF;
+}
+
+/* Swiper Styles */
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-x; /* Allows horizontal swiping */
+    cursor: grab; /* Indicates the container is draggable */
+    padding: 0 1rem; /* Ensure padding allows for visibility of slides */
+    box-sizing: border-box; /* Ensure padding does not affect slide width */
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 20px; /* Adjusted to match the spaceBetween in Swiper */
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    color: #555f62;
+    font-family: TBCX, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    grid-row-gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    display: flex;
+    width: calc(33.333% - 20px); /* Ensure slides fit within the container considering gap */
+}
+
+/* Adjust Swiper Container Padding */
+.swiper-container {
+    padding-right: 50px; /* Ensure padding allows for the last slide to be visible */
+}
+
+/* Product Card Styles */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card_img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.product-card_img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.product-card_content {
+    color: #555f62;
+    font-family: TBCX, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    grid-row-gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    display: flex;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Category and Title Styles */
+.category-wrap .card-category {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .swiper-slide {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: calc(50% - 10px); /* Adjust for spaceBetween */
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: calc(100% - 10px); /* Adjust for spaceBetween */
+    }
+}
+
+/* Swiper Scrollbar Styles */
+.swiper-scrollbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #f1f1f1;
+}
+
+.swiper-scrollbar-drag {
+    background: #007BFF;
+    border-radius: 8px;
+}
+
+/* Remove Swiper Pagination */
+.swiper-pagination {
+    display: none; /* Hide pagination bullets */
+}
+
+
+
+/* General Styles get app */
+
+.section_get-app {
+    padding: 40px 0;
+  }
+  
+  .get-app_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .padding-global {
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .section_get-app.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    align-items: center;
+
+  }
+  
+  .get-app_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+
+  }
+  
+  .get-app_content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .get-app_image {
+    flex: 1;
+    max-width: 30%;
+    text-align: right;
+  }
+  
+  .get-app_buttons {
+    margin-top: 20px;
+  }
+  .get-app_buttons a {
+    margin: 10px;
+  }
+  
+  .app-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #f5f7f8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .app-button:hover {
+    background-color: #aed3fa;
+  }
+  
+  .get-app_image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  @media (max-width: 800px) {
+    .get-app_inner {
+      flex-direction: column-reverse;
+    }
+  
+    .get-app_content, .get-app_image {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .get-app_buttons {
+      text-align: center;
+    }
+  
+    .app-button {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+
+  /* General Styles for swaay */
+/* General Footer Styles */
+.footer {
+    font-family: TBCX, sans-serif;
+    background-color: #fff;
+    color: #555f62;
+    padding: 20px 0;
+    text-align: left;
+  }
+  
+  .footer_top-inner
+{
+display: flex;
+justify-content: space-between;
+}
+  .footer_top-inner,
+  .footer_main-inner,
+  .footer_bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer_main-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 40px 0;
+  }
+  
+  .footer_main-col h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+
+  }
+  
+  .footer_main-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer_main-col ul li {
+    margin-bottom: 20px;
+  }
+  
+  .footer_main-col ul li a {
+    color: #555f62;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer_bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #eef1f1;
+  }
+  
+  .footer_links a {
+    margin-left: 20px;
+    color: #555f62;
+    text-decoration: none;
+  }
+  
+  .social_media a {
+    margin-right: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer_main-inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer_bottom-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer_main-inner {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer_bottom-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Hamburger Menu Integration */
+  @media (max-width: 768px) {
+    .footer_main {
+      display: none;
+    }
+  
+    .footer_main.active {
+      display: block;
+    }
+  }
+  
